@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import "@fontsource/ibm-plex-sans-arabic/400.css";
+@import "@fontsource/ibm-plex-sans-arabic/500.css";
+@import "@fontsource/ibm-plex-sans-arabic/600.css";
+@import "@fontsource/ibm-plex-sans-arabic/700.css";
+
+@theme {
+  --font-sans: "IBM Plex Sans Arabic", ui-sans-serif, system-ui, sans-serif;
+  --color-sidebar: #30949E;
+  --color-sidebar-hover: #287f88;
+  --color-primary: #30949E;
+  --color-primary-hover: #287f88;
+  --color-accent-gold: #FDBD68;
+  --color-child-header: #30949E;
+  --color-surface: #F8F4E7;
+  --color-danger: #EF4444;
+  --color-danger-hover: #DC2626;
+}
+
+body {
+  font-family: var(--font-sans);
+  margin: 0;
+}
+
+@keyframes tour-popup {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.96);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-tour-popup {
+  animation: tour-popup 0.28s ease-out both;
+}
